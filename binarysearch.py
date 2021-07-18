@@ -4,6 +4,7 @@ def binarySearch(list,item):
 	pivot = 0
 	while(min<=max):
 		pivot = (min+max)//2
+		print(list[pivot])
 		if(list[pivot])==item:
 			return pivot
 		else:
