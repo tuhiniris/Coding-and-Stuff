@@ -1,5 +1,6 @@
 # Function for nth Fibonacci number
-
+import functools
+@functools.lru_cache(maxsize = 256)
 def Fibonacci(n):
 	if n<0:
 		print("Incorrect input")

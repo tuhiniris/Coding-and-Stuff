@@ -1,4 +1,6 @@
 from collections import defaultdict
+import sys
+sys.setrecursionlimit(5000)
 
 def default_val():
 	return False
@@ -17,6 +19,6 @@ def fibonacci(n):
 		else:
 			return memo[n]
 
-print(memo)
-print(fibonacci(500))
-print(memo)
+#print(memo)
+print(fibonacci(2500))
+#print(memo)
