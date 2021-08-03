@@ -10,7 +10,7 @@ def binarysearch(arr,start,end,ele):
 	return ans					
 
 ans = -1	
-arr = [1,4,6,7,9,11]
+arr = [1,4,6,7,9,11,15,16,19,22,211,1020,1189]
 errors = []
 for i in range(len(arr)):
 	try:		
