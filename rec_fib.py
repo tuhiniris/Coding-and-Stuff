@@ -19,6 +19,4 @@ def fibonacci(n):
 		else:
 			return memo[n]
 
-#print(memo)
-print(fibonacci(2500))
-#print(memo)
+print(fibonacci(350))
