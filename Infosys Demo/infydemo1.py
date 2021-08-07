@@ -4,7 +4,6 @@ def def_val():
 	return False
 
 powermemo = defaultdict(def_val)
-valuememo = defaultdict(def_val)
 maxans = []
 
 n = int(input()) #monsters
@@ -19,25 +18,23 @@ for i in range(n):
 
 if e>=max(power):
 	maxans.append(n)
-	#print("SESH")
+	print("SESH")
 else:
 	for i in range(n):
 		powermemo[power[i]]=bonus[i]
-		valuememo[bonus[i]]=power[i]
 
 	power.sort()
-	#print(power)
-	#print(memo)
+	print(power)
+	print(powermemo)
 	ans = 0
 	for i in range(n):
 		if e>=power[i]:
-			#print(ans)
+			print(ans)
 			ans+=1
 			e+=powermemo[power[i]]
-			#print(e)
+			print(e)
 
-	maxans.append(ans)
-print(max(maxans))
+print(ans)
 
 '''
 
@@ -60,13 +57,13 @@ print(max(maxans))
 --> 2
 
 3
-20
-25
-20
 15
-5
+25
+15
 11
+5
 1
+11
 
 4
 1
