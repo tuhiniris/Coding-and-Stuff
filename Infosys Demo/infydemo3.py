@@ -10,7 +10,7 @@ def printAllKLengthRec(setA, prefix, n, k):
 	if (k == 0) :
 		global x
 		x=x+1
-		print(prefix) #uncomment this to see the number
+		print(prefix)
 		return
 	
 	for i in range(n):
