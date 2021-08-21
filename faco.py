@@ -1,23 +1,13 @@
-memo = {'key1':'wipro','key2':'iem','key3':'wb'}
-print(memo['key2'])
+memo = {}
 
-
-def factorial(n):
-	if n<=2:
+def fact(n):
+	if n==0:
+		return 0
+	elif n==1:
 		return n
 	else:
 		if n not in memo:
-			memo[n] = (n)*factorial(n-1)
-			return memo[n]
-		else:
-			print("In Cache : ",n)
-			return memo[n]	
+			memo[n] = n*fact(n-1)
+			return memo[n]			
 
-'''
-print(factorial(10))
-print(memo)
-print(factorial(12))
-print(factorial(12))
-print(memo)
-print(factorial(11))
-'''
+print(fact(5))

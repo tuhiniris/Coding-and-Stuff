@@ -1,10 +1,17 @@
-memo = {0:0,1:1} #Seed Values
+import sys
+sys.setrecursionlimit(9500)
 
-def fibonacci(n):
+memo = {0:0,1:1}
+
+def fibo(n):
 	if n not in memo:
-		memo[n] = (fibonacci(n-1)+fibonacci(n-2))
+		memo[n] = fibo(n-1)+fibo(n-2)
 		return memo[n]
 	else:
 		return memo[n]	
-		
-print(fibonacci(10))
+
+n = int(input())
+for i in range(1,n+1):
+	fibo(i)
+	if i==n:
+		print("The Fibonacci of",i,"is :",fibo(i))				
