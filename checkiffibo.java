@@ -1,5 +1,4 @@
 import java.util.*;
-
 public class checkiffibo {
 	
 	static HashMap<Integer,Integer>memo = new HashMap<>();
@@ -32,9 +31,7 @@ public class checkiffibo {
 				break;				
 			}
 			count++;			
-		}
-		
-		
+		}		
 	}
 }
 
