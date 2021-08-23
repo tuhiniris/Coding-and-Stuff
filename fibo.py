@@ -1,5 +1,4 @@
 import sys
-sys.setrecursionlimit(9500)
 
 memo = {0:0,1:1}
 
@@ -11,6 +10,8 @@ def fibo(n):
 		return memo[n]	
 
 n = int(input())
+sys.setrecursionlimit(n)
+
 for i in range(1,n+1):
 	fibo(i)
 	if i==n:
