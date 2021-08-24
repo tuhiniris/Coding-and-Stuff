@@ -13,14 +13,14 @@ public class VipraV {
 		}
 		else{
 			 
-			memo.put(n, fibonacci(n-1)+fibonacci(n-2));
+			memo.put (n, fibonacci(n-1)+fibonacci(n-2));
 			return memo.get(n);
 		}
 	}
 	
 	public static void main (String[] args) {
 		VipraV hello = new VipraV();
-		System.out.println(hello.fibonacci(1000));
+		System.out.println(hello.fibonacci(10000));
 
 		System.out.println(memo);
 	}
