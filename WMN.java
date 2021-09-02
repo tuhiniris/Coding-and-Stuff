@@ -1,11 +1,13 @@
 import java.util.*;
+import java.math.BigInteger;
+
 public class WMN {
 	
-	static HashMap<Long,Long> memo = new HashMap<>();	
+	static HashMap<BigInteger,BigInteger> memo = new HashMap<>();	
 	
-	long fibo(long n){
+	BigInteger fibo(BigInteger n){
 		
-		if((n==1)||(n==0)){
+		if((n==BigInteger("1"))||(n==BigInteger("0"))){
 			return n;
 		}
 		
@@ -22,8 +24,8 @@ public class WMN {
 	public static void main (String[] args) {		
 		WMN wip = new WMN();
 		
-		long n = 91;
-		for(long i=1;i<n+1;i++){
+		BigInteger n = 90588;
+		for(BigInteger i=1;i<n+1;i++){
 			wip.fibo(i);
 			if (i==n){
 				System.out.println(wip.fibo(n));
