@@ -18,9 +18,13 @@ public class checkiffibo {
 		memo.put(1,1);
 		checkiffibo hello = new checkiffibo();
 		Scanner sc = new Scanner(System.in);
+		try{
 		int n = sc.nextInt(); //{Print the nth fibonacci number
 		int count = 2;		
-		
+		}
+		catch(Exception e){
+			
+		}
 		while(true){
 			if (hello.fibo(count)==n){
 				System.out.println("Yes - it is a fibonacci");
