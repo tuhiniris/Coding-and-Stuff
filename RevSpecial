@@ -1,0 +1,4 @@
+# This is a coding question for reversing a string
+
+x = list(map(str,input().split()))
+print(x)
