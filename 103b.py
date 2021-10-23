@@ -19,6 +19,12 @@ memo = {}
 a = 2
 b = 2
 
+import heapq
 
+arr = [6,5,1,3,11,18,19,23,2,7,6,4,22]
+heapq.heapify(arr)
+print(arr)
+
+print(arr[-2])
 
 

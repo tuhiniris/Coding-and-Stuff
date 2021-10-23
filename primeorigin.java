@@ -22,8 +22,8 @@ public class primeorigin extends Mother{
 		memo.put(1,1);
 		primeorigin myobj = new primeorigin();
 		Mother newobj = new Mother();
-		System.out.println(myobj.fibonacci(20));
-		System.out.println(newobj.fibonacci(25));
+		for(int i = 0; i<10000; i++)
+		System.out.println(myobj.fibonacci(i));
 	}
 }
 
