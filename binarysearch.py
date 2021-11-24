@@ -20,5 +20,3 @@ arr = [2,3,7,11,14,28,32]
 ele = 32
 
 print(binarySearch(arr,ele))
-			
-			
